@@ -18,7 +18,18 @@ class GradiantContainer extends StatelessWidget{
         ),
       ),
       child:Center(
-        child: StyledText("Hello H"),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset('assets/images/dice-6.png',width: 200,),
+            TextButton(
+              onPressed: (){},
+              style: TextButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  textStyle: TextStyle(fontSize: 28)),
+              child: const Text("Roll Dice"),)
+          ],
+        ),
       ),
     );
   }
