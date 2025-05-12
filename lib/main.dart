@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import 'gradient_container.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-            backgroundColor: Color.fromARGB(255, 196, 119, 95),
-            title: Center(child: Text("Roll The Dice")),
+            backgroundColor: Colors.purple,
+            title: Center(child: Text("Roll The Dice",style: TextStyle(
+                color: Colors.white,
+            fontWeight: FontWeight.bold,
+            ),)),
           ),
-          body: GradiantContainer()
+          body: GradiantContainer.purple()
       ),
     );
   }

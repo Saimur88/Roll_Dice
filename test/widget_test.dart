@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:roll_dice/main.dart';
+import 'package:roll_dice/styled_text.dart';
 
 
 void main() {
